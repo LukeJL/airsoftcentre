@@ -3,8 +3,8 @@
 	<head>
 		<!-- Dynamically generated title based on the actual
 		title of the article stored in the database-->
-		<title>AutoNex</title>
-		
+		<title>Airsoftcentre </title>
+
 		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
@@ -14,41 +14,22 @@
 		<!-- fontawesome -->
 		<script src="https://kit.fontawesome.com/aa3bf41353.js" crossorigin="anonymous"></script>
 		<!-- css file -->
-		<link rel="stylesheet" href="/assets/css/style.css?ts=<?=time()?>" media="screen" />
+		<link rel="stylesheet" href="/assets/css/styles.min.css?ts=<?=time()?>" media="screen" />
 	</head>
-
-<header>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><image src="/assets/imgs/Logo.svg"></image></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-</header>
-
-	<body>
+	<?php
+		require ($_SERVER['DOCUMENT_ROOT'].'/db/db_con.php');
+	?>
+	  <header class="container blog-header py-3">
+	    <div class="row flex-nowrap justify-content-between align-items-center">
+	      <div class="col-4 pt-1">
+					<a class="blog-header-logo text-dark" href="#"><image src="/assets/imgs/Logo.svg"></image></a>
+	      </div>
+	      <div class="col-4 text-center">
+	      </div>
+	      <div class="col-4 d-flex justify-content-end align-items-center">
+	        <a class="link-secondary mx-3" href="#">Log In</a>
+	        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+	      </div>
+	    </div>
+	  </header>
+<body>
